@@ -1,0 +1,14 @@
+<form action="/analyze" method="POST">
+    <label for="size">Tumor Size (mm):</label>
+    <input type="number" id="size" name="tumor_size">
+    
+    <label for="stage">Stage:</label>
+    <select id="stage" name="cancer_stage">
+        <option value="1">Stage I</option>
+        <option value="2">Stage II</option>
+        <option value="3">Stage III</option>
+        <option value="4">Stage IV</option>
+    </select>
+    
+    <button type="submit">Submit for Analysis</button>
+</form>
