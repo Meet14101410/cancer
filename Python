@@ -1,0 +1,13 @@
+def classify_cancer_risk(tumor_size, growth_rate):
+    """
+    Categorizes risk based on tumor size (mm) and growth rate.
+    """
+    if tumor_size < 20 and growth_rate < 0.1:
+        return "Low Risk / Monitoring"
+    elif 20 <= tumor_size <= 50:
+        return "Moderate Risk / Biopsy Suggested"
+    else:
+        return "High Risk / Immediate Intervention"
+
+# Example Usage
+print(classify_cancer_risk(35, 0.2))
